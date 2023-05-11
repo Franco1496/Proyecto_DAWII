@@ -36,7 +36,7 @@ public class Ubigeo {
     @Column(name = "distrito", length = 40)
     private String distrito;
 
-    @Column(name = "fec_creacion", columnDefinition = "TIMESTAP DEFAULT CURRENT_TIMESTAP")
+    @Column(name = "fec_creacion", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @Temporal(value = TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "yyyy/MM/dd hh:mm:ss")
     private Date fec_creacion;

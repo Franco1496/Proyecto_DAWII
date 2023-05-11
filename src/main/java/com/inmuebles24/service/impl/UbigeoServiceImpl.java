@@ -6,10 +6,12 @@ import com.inmuebles24.model.Ubigeo;
 import com.inmuebles24.repository.UbigeoRepository;
 import com.inmuebles24.service.UbigeoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class UbigeoServiceImpl implements UbigeoService {
     @Autowired
     private UbigeoRepository ubigeoRepository;

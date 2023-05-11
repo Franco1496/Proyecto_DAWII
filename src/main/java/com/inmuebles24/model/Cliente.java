@@ -37,7 +37,7 @@ public class Cliente {
     @Column(name = "correo_cliente", length = 100)
     private String correo_cliente;
 
-    @Column(name = "fec_creacion", columnDefinition = "TIMESTAP DEFAULT CURRENT_TIMESTAP")
+    @Column(name = "fec_creacion", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @Temporal(value = TemporalType.TIMESTAMP)
     @DateTimeFormat(pattern = "yyyy/MM/dd hh:mm:ss")
     private Date fec_creacion;
