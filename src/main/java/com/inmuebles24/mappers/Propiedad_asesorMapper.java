@@ -16,7 +16,7 @@ public interface Propiedad_asesorMapper {
 
     Propiedad_asesor propiedad_asesorDTOAPropiedad_asesor(Propiedad_asesorDTO propiedad_asesorDTO);
 
-    List<Propiedad_asesorDTO> listarPropiedad_asesorAPropiedad_asesorDTO(List<Propiedad_asesor> propiedad_asesor);
+    List<Propiedad_asesorDTO> listaPropiedad_asesorAPropiedad_asesorDTO(List<Propiedad_asesor> propiedad_asesor);
 
     List<Propiedad_asesor> listaPropiedad_asesorDTOAPropiedad_asesor(List<Propiedad_asesorDTO> propiedad_asesorDTOLista);
 
