@@ -42,4 +42,5 @@ public class Propiedad_asesor {
     @Column(name = "flag_estado")
     private boolean flag_estado;
 
+
 }
