@@ -36,9 +36,9 @@ public class Propiedad_asesorController {
 
     }
 
-    @RequestMapping(value = "/" , method = RequestMethod.DELETE)
-    public void eliminar(@PathVariable(name = "id_propiedad_asesor") long id_propiedad_asesor)
-    {propiedad_asesorService.delete(id_propiedad_asesor);}
+    @RequestMapping(value = "/{id_propiedad_asesor}" , method = RequestMethod.DELETE)
+    public void eliminar(@PathVariable(name = "id_propiedad_asesor") long id_propiedad_asesor) {
+        propiedad_asesorService.delete(id_propiedad_asesor);}
 
 
 

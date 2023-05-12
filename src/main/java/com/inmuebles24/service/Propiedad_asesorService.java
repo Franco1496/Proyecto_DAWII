@@ -12,6 +12,6 @@ public interface Propiedad_asesorService {
 
     Propiedad_asesorDTO save(Propiedad_asesorDTO propiedad_asesorDTO);
 
-    void delete(Long id_cliente);
+    void delete(Long id_propiedad_asesor);
 
 }
