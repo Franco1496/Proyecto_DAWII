@@ -45,5 +45,4 @@ public class Asesor {
     @Column(name = "flag_estado")
     private boolean flag_estado;
 
-
 }
