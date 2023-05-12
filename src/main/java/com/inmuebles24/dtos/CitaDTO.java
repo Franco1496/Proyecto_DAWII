@@ -2,8 +2,10 @@ package com.inmuebles24.dtos;
 
 import com.inmuebles24.model.Cliente;
 import lombok.Data;
+
+import java.sql.Date;
 import java.sql.Time;
-import java.util.Date;
+
 @Data
 public class CitaDTO {
 

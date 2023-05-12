@@ -2,7 +2,7 @@ package com.inmuebles24.service.impl;
 
 import com.inmuebles24.dtos.VentaDTO;
 import com.inmuebles24.mappers.VentaMapper;
-import com.inmuebles24.model.Cliente;
+
 import com.inmuebles24.model.Venta;
 import com.inmuebles24.repository.VentaRepository;
 import com.inmuebles24.service.VentaService;
@@ -42,7 +42,5 @@ public class VentaServiceImpl implements VentaService {
 
     @Override
     public void delete(Long id_venta) {
-        ventaRepository.deleteById(id_venta);
-
-    }
+        ventaRepository.deleteById(id_venta);}
 }
