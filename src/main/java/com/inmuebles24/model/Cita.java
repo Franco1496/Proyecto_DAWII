@@ -4,8 +4,9 @@ import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import java.sql.Date;
 import java.sql.Time;
-import java.util.Date;
+
 
 @Entity
 @Table(name = "tb_cita")
@@ -32,7 +33,7 @@ public class Cita {
 
     @Column(name = "hora_cita")
     @Temporal(value = TemporalType.TIME)
-    @DateTimeFormat(pattern = "HH:mm:ss")
+    @DateTimeFormat(pattern = "hh:mm:ss")
     private Time hora_cita;
 
     @Column(name = "fec_creacion", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")

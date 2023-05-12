@@ -3,7 +3,6 @@ package com.inmuebles24.service.impl;
 import com.inmuebles24.dtos.CitaDTO;
 import com.inmuebles24.mappers.CitaMapper;
 import com.inmuebles24.model.Cita;
-import com.inmuebles24.model.Cliente;
 import com.inmuebles24.repository.CitaRepository;
 import com.inmuebles24.service.CitaService;
 import org.springframework.beans.factory.annotation.Autowired;

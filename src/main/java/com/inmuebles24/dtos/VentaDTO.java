@@ -2,9 +2,7 @@ package com.inmuebles24.dtos;
 
 import com.inmuebles24.model.Cliente;
 import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
 @Data
