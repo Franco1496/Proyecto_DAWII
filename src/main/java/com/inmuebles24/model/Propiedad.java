@@ -16,22 +16,36 @@ public class Propiedad {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_propiedad")
     private Long idPropiedad;
+
     @Column(name = "dir_propiedad")
     private String direccionPropiedad;
-    @Column(name = "id_ubigeo")
-    private int idUbigeo;
-    @Column(name = "id_tipo_propiedad")
-    private int idTipoPropiedad;
+
+    @ManyToOne
+    @JoinColumn(name = "id_ubigeo", nullable = false)
+    private Ubigeo idUbigeo;
+
+
+    @ManyToOne
+    @JoinColumn(name = "id_tipo_propiedad", nullable = false)
+    private TipoPropiedad idTipoPropiedad;
+
     @Column(name = "cant_habitaciones")
     private int cantidadHabitaciones;
+
     @Column(name = "cant_banhos")
     private int cantidadBanhos;
+
     @Column(name = "area_total")
     private int areaTotal;
-    @Column(name = "id_unidad_medida")
-    private int idUnidadMedida;
+
+
+    @ManyToOne
+    @JoinColumn(name = "id_unidad_medida", nullable = false)
+    private UnidadMedida idUnidadMedida;
+
     @Column(name = "precio_venta")
     private double precioVenta;
+
     @Column(name = "disponible_venta")
     private boolean disponibleVenta;
     @Column(name = "fec_creacion", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")

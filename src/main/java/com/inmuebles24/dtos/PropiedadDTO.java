@@ -8,13 +8,17 @@ import java.util.Date;
 public class PropiedadDTO {
 
     private int idPropiedad;
+
     private String direccionPropiedad;
-    private int idUbigeo;
-    private int idTipoPropiedad;
+
+    private UbigeoDTO idUbigeo;
+
+    private TipoPropiedadDTO idTipoPropiedad;
+
     private int cantidadHabitaciones;
     private int cantidadBanhos;
     private int areaTotal;
-    private int idUnidadMedida;
+    private UnidadMedidaDTO idUnidadMedida;
     private double precioVenta;
     private boolean disponibleVenta;
     private Date fechaCreacion;
