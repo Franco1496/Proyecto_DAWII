@@ -20,8 +20,9 @@ public class Venta {
 
 
     //relacion con entiedad Asesor
-    @Column(name = "id_propiedad_asesor")
-    private long id_propiedad_asesor;
+    @ManyToOne
+    @JoinColumn(name = "id_propiedad_asesor", nullable = false)
+    private Propiedad_asesor id_propiedad_asesor;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_cliente", nullable = false)
