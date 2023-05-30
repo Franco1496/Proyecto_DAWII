@@ -4,11 +4,11 @@ import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
-import java.sql.Time;
+
+import java.time.LocalTime;
 import java.util.Date;
 
-import java.util.TimeZone;
-import java.util.Timer;
+
 
 
 @Entity
@@ -22,8 +22,9 @@ public class Cita {
     private long id_cita;
 
 
-    @Column(name = "id_propiedad_asesor")
-    private long id_propiedad_asesor;
+    @ManyToOne
+    @JoinColumn(name = "id_propiedad_asesor", nullable = false)
+    private Propiedad_asesor id_propiedad_asesor;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_cliente" , nullable = false)
@@ -35,9 +36,8 @@ public class Cita {
     private Date fec_cita;
 
     @Column(name = "hora_cita")
-    @Temporal(value = TemporalType.TIME)
     @DateTimeFormat(pattern = "HH:mm:ss")
-    private Date hora_cita;
+    private String hora_cita;
 
     @Column(name = "fec_creacion", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
     @Temporal(value = TemporalType.TIMESTAMP)

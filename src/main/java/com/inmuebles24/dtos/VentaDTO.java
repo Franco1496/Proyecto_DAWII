@@ -1,6 +1,7 @@
 package com.inmuebles24.dtos;
 
 import com.inmuebles24.model.Cliente;
+import com.inmuebles24.model.Propiedad_asesor;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -9,8 +10,8 @@ import java.util.Date;
 public class VentaDTO {
 
     private long id_venta;
-    private long id_propiedad_asesor;
-    private Cliente id_cliente;
+    private Propiedad_asesorDTO id_propiedad_asesor;
+    private ClienteDTO id_cliente;
     private BigDecimal monto_venta;
     private Date fec_creacion;
     private boolean flag_estado;
