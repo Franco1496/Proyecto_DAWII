@@ -2,6 +2,11 @@ create database inmuebles24;
 
 use inmuebles24;
 
+insert into rol(rol_nombre) values ('ROLE_ADMIN');
+insert into rol(rol_nombre) values ('ROLE_USER');
+
+select * from rol;
+
 insert into clientes (ape_cliente,correo_cliente,dir_cliente,documento,flag_estado,nom_cliente,tel_cliente,id_ubigeo) values ('Rojas','erojas@gmail.com','Direccion prueba 1','14611399',true,'Eduardo','936763219',1266);
 insert into clientes (ape_cliente,correo_cliente,dir_cliente,documento,flag_estado,nom_cliente,tel_cliente,id_ubigeo) values ('Palacios','ppalacios@gmail.com','Direccion prueba 2','93550198',true,'Pablo','958181439',1267);
 insert into clientes (ape_cliente,correo_cliente,dir_cliente,documento,flag_estado,nom_cliente,tel_cliente,id_ubigeo) values ('Chavez','jchavez@gmail.com','Direccion prueba 3','21526143',true,'Jorge','952809145',1268);
