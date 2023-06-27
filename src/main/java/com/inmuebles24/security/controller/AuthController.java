@@ -31,7 +31,6 @@ import java.util.Set;
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins = "http://localhost:4200")
-@PreAuthorize("hasRole('ADMIN')")
 public class AuthController {
 
     @Autowired
